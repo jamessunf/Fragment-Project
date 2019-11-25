@@ -25,11 +25,11 @@ public class ContainerActivity extends AppCompatActivity {
        btnShift.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
-               getSupportFragmentManager().beginTransaction().replace(R.id.fl_container,secondFragment).commitAllowingStateLoss();
+               getSupportFragmentManager().beginTransaction().replace(R.id.fl_container,firstFragment).commitAllowingStateLoss();
            }
        });
 
-        getSupportFragmentManager().beginTransaction().add(R.id.fl_container,firstFragment).commitAllowingStateLoss();
+        getSupportFragmentManager().beginTransaction().add(R.id.fl_container,firstFragment,"first_frag").commitAllowingStateLoss();
 
     }
 }

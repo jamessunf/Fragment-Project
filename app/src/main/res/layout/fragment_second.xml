@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context=".SecondFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -11,5 +12,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="@string/fragment_second" />
+
+    <ListView
+        android:id="@+id/lst_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
 </FrameLayout>
